@@ -16,29 +16,33 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: 2.8em;
+	font-size: 2.5em;
 }
 
 h2 {
-	font-size: 2.2em;
+	font-size: 2.0em;
 }
 
 h3 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 h4 { 
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 h5 {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 a {
 	text-decoration: none;
-	color: black;
 }
+
+a:hover {
+	color: rgb(46, 204, 113);
+}
+
 ol > li {
 	text-indent: 0;
 }
@@ -111,7 +115,7 @@ nav {
 	background-color: #34495E;
 	padding: 5px 5px;
 	margin: 0 0;
-	font-size: 1.1em;
+	font-size: 1.05em;
 }
 
 .bottom-border{
@@ -156,6 +160,7 @@ nav {
 .posted-by {
 	font: 1em/1.5 Verdana, Geneva, sans-serif;
 	color: gray;
+	margin-bottom: 4em;
 }
 
 /* Table */
@@ -171,7 +176,7 @@ table.table-borders-all td, table.table-borders-all th {
 }
 
 table.table-borders-all th {
-	height: 2em;
+	height: 1em;
 	background-color: rgb(189, 195, 199);
 	font-weight: bold;
 	font-family: Verdana, Geneva, sans-serif;
@@ -188,12 +193,16 @@ table.table-borders-all th {
 	font-weight: bold;
 }
 
+.blue-button > a:hover {
+	color: rgb(46, 204, 113);
+}
+
 /* Code sample */
 
 .code-sample {
 	background-color: #BDC3C7;
 	margin: 0 0;
-	padding: 1em 2em; 
+	padding: .8em 2em; 
 	font: 1.2em/1.6 "Lucida Sans Typewriter", "Lucida Console", Monaco, monospace;	
 }
 
@@ -236,6 +245,41 @@ table.table-borders-all th {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 1.4em;
 	margin-top: 10px;
+}
 
+/* Comments */
 
+.comments-all {
+	font: .9em/1.2 Verdana, Geneva, sans-serif;
+}
+
+.user-image {
+	display: inline-block;
+	float: left;
+	padding-right: 15px;
+}
+
+.comments-username {
+	display: inline-block;
+
+}
+
+.comments-date {
+	font-size: 1em;
+	color: gray;
+	font-style: italic;
+}
+
+.comment {
+	clear: left;
+}
+
+.comment p {
+	padding-left: 0;
+}
+
+.comment-second-level {
+	border-left: 1px solid gray;
+	margin-left: 1.5em;
+	padding-left: 10px;
 }
