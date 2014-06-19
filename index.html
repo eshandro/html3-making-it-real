@@ -9,7 +9,7 @@
 <body>
 	<div id="wrapper">
 		<div id="center-column">
-			<header><h1 class="align-bottom">My Website</h1>
+			<header><h1>My Website</h1>
 			</header>
 
 			<nav>
@@ -38,7 +38,7 @@
 					<h3 class="bottom-border">Section Title</h3>
 					<p>Egestas a lundium mid. Porta et! Platea facilisis tortor? Rhoncus! Etiam a nascetur mus? Ut? Lorem nascetur dapibus cum et lectus augue a odio diam placerat elementum sagittis, adipiscing urna cum nisi pid. Porttitor eu penatibus, sed cras tristique. Facilisis, hac integer, aliquet nisi. Mid, elit dolor a augue odio.
 					</p>
-					<table>
+					<table class="table-borders-all">
 						<tr>
 							<th>What</th>
 							<th>Where</th>
@@ -47,17 +47,17 @@
 						<tr>
 							<td>HTML</td>
 							<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni accusamus officia non quidem nulla incidunt, obcaecati totam. Tempora, ea laudantium soluta iste ipsam, itaque aliquam, eos fuga nulla ut reprehenderit.</td>
-							<td><a href="#">Go!</a></td>
+							<td><button class="blue-button"><a href="#">Go!</a></button></td>
 						</tr>
 						<tr>
 							<td>CSS</td>
 							<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum perferendis accusamus accusantium voluptatibus deserunt,</td>
-							<td><a href="#">Try!</a></td>
+							<td><button class="blue-button"><a href="#">Try!</a></button></td>
 						</tr>
 						<tr>
 							<td>JS</td>
 							<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, deserunt eaque?</td>
-							<td><a href="#">View!</a></td>
+							<td><button class="blue-button"><a href="#">View!</a></button></td>
 						</tr>
 					</table>
 					<p>Ut habitasse ut ut magnis arcu ut natoque lectus, cras? Ut natoque in placerat porta ac, habitasse dis risus nunc porttitor ut ultricies! Dis elementum! Nunc phasellus sed porta porta, urna tristique et. Massa est integer vut sociis tincidunt odio, et sed. Rhoncus ac, nunc! In magnis magna adipiscing us.</p>
@@ -67,7 +67,13 @@
 					<h3 class="bottom-border">Section Title</h3>
 					<p>Ut habitasse ut ut magnis arcu ut natoque lectus, cras? Ut natoque in placerat porta ac, habitasse dis risus nunc porttitor ut ultricies! Dis elementum! Nunc phasellus sed porta porta, urna tristique et. Massa est integer vut sociis tincidunt odio, et sed. Rhoncus ac, nunc! In magnis magna adipiscing purus.</p>
 
-					<p class="code-sample">Code code code</p>
+					<div class="code-sample">
+						<pre>
+$('#myElement').click(function() {
+ console.log('Clicked!')
+});
+						</pre>
+					</div>
 
 					<p>Ut habitasse ut ut magnis arcu ut natoque lectus, cras? Ut natoque in placerat porta ac, habitasse dis risus nunc porttitor ut ultricies! Dis elementum! Nunc phasellus sed porta porta, urna tristique et. Massa est integer vut sociis tincidunt odio, et sed. Rhoncus ac, nunc! In magnis magna adipiscing purus.</p>
 
@@ -77,8 +83,8 @@
 				<section>
 					<h3 class="bottom-border">Section Title</h3>
 					<p>Augue sagittis nisi tincidunt? Nisi a vut! Turpis vut tortor montes in nisi aenean rhoncus adipiscing cursus urna cras. Elit mus porta proin pid cum pellentesque facilisis lectus? Mattis, turpis parturient, velit eu porta, nunc eros habitasse. Urna amet odio arcu, turpis tincidunt risus elementum urna augue et nec.</p>
-					<img src="http://placehold.it/350x150" alt="">	
-					<ol>
+					<img src="http://placehold.it/410x100" alt="">	
+					<ol class="ordered-list-noindent">
 						<li>
 							<p><strong>Create HTML:</strong> Augue sagittis nisi tincidunt? Nisi a vut! Turpis vut tortor montes in nisi aenean rhoncus adipiscing cursus urna cras. Elit mus porta proin pid cum pellentesque facilisis lectus? Mattis, turpis parturient, velit eu porta, nunc eros habitasse. Urna amet odio arcu, turpis tincidunt risus elementum urna augue et nec.</p>
 						</li>
@@ -91,21 +97,22 @@
 					</ol>
 				</section>
 				
-				<footer>Posted by <strong>Author</strong> under <strong>Web &gt; Dev
-				</strong> on <strong>January 13, 2014.</strong>
+				<footer class="posted-by">
+				<p>Posted by <strong>Author</strong> under <strong>Web &gt; Dev
+				</strong> on <strong>January 13, 2014.</strong></p>
 				</footer>
 
-				<section class="comments-form">
+				<section>
 					<h2>Comments</h2>
-					<form action="/some-script" method="post">
+					<form class="comments-form" action="/some-script" method="post">
 						<fieldset>
 							<legend>USER INFO</legend>
-							<label for="email">Email
-							<input type="text" id="email"></label>
-							<label for="display-name">Display Name
-							<input type="text" id="display-name"></label>
-							<label for="website">Website
-							<input type="text" id="website"></label>
+							<label for="email">Email</label>
+							<input type="text" id="email">							
+							<label for="display-name">Display Name</label>
+							<input type="text" id="display-name">
+							<label for="website">Website</label>
+							<input type="text" id="website">
 						</fieldset>
 						<fieldset>
 							<legend>COMMENT</legend>
@@ -164,15 +171,17 @@
 		</div>
 		<div id="right-column">
 			<aside class="right-aside">
-				<ul><strong>Recent Posts</strong>
-					<li>Another Post</li>
-					<li>A Cool Story</li>
-					<li>Useful Tips and Tricks</li>
+				<ul>
+					<h5>Recent Posts</h5>
+					<li class="list-larger-text">Another Post</li>
+					<li class="list-larger-text">A Cool Story</li>
+					<li class="list-larger-text">Useful Tips and Tricks</li>
 				</ul>
-				<ul><strong>Categories</strong>
-					<li>Web</li>
-					<li>Dev</li>
-					<li>CSS</li>
+				<ul>
+					<h5>Categories</h5>
+					<li class="list-larger-text">Web</li>
+					<li class="list-larger-text">Dev</li>
+					<li class="list-larger-text">CSS</li>
 				</ul>
 			</aside>
 		</div>
